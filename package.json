@@ -1,0 +1,22 @@
+{
+  "name": "web-chat-app",
+  "version": "1.0.0",
+  "description": "It is a group and individually chatting app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KmKalpana/Web-Chat-App.git"
+  },
+  "author": "Km Kalpana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KmKalpana/Web-Chat-App/issues"
+  },
+  "homepage": "https://github.com/KmKalpana/Web-Chat-App#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
