@@ -2,9 +2,9 @@
   "name": "web-chat-app",
   "version": "1.0.0",
   "description": "It is a group and individually chatting app.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,13 @@
   },
   "homepage": "https://github.com/KmKalpana/Web-Chat-App#readme",
   "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "nodemon": "^2.0.16"
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19"
   }
 }
