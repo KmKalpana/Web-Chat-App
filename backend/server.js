@@ -23,7 +23,7 @@ app.use('/api/user',userRoutes);
 app.use('/api/chats',chatRoutes);
 app.use(Notfound);
 app.use(ErrorHandler);
-const PORT=process.env.PORT || 5000;
+const PORT=process.env.PORT || 5600;
 app.listen(PORT,(()=>{
     console.log(`server successfully started on Port ${PORT}`);
 }))
