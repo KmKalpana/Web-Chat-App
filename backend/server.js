@@ -7,6 +7,7 @@ const connectDb=require('./config/db');
 const {Notfound, ErrorHandler}=require('./middleware/ErrorMiddleware');
 const dotenv=require('dotenv');
 const userRoutes=require('./routes/userRoutes');
+const chatRoutes=require('./routes/chatRoutes');
 dotenv.config();
 connectDb();
 app.use(express.json());
@@ -19,6 +20,7 @@ app.get('/api/chat',((req,res)=>{
     console.log(chats);
 }))
 app.use('/api/user',userRoutes);
+app.use('/api/chats',chatRoutes);
 app.use(Notfound);
 app.use(ErrorHandler);
 const PORT=process.env.PORT || 5000;
