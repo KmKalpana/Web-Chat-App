@@ -5,8 +5,8 @@ const userSchema=new mongoose.Schema({
     email: {type: String, required: true, unique:true},
     password: {type: String, required: true},
     pic: {
- type: String,
- default:"https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
+   type: String,
+    default:"https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
     }
 },
 { timestamps: true }
@@ -24,4 +24,5 @@ userSchema.pre("save", async function (next) {
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
 });
-module.exports=mongoose.model("User",userSchema);
+const Chats=mongoose.model("User",userSchema)
+module.exports=Chats;
